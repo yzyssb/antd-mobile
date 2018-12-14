@@ -1,0 +1,12 @@
+{
+  "proxy": {
+    "/api": {
+      "target": "https://www.aladzb.com/",
+      "changeOrigin": true,
+      "pathRewrite": { "^/api": "" }
+    }
+  },
+  "extraBabelPlugins": [
+    ["import", { "libraryName": "antd-mobile", "style": "css" }]
+  ]
+}
